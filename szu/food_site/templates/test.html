@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>szu_restaurant</title>
+<script type="text/javascript" src="../static/jquery.min.js"></script>
+</head>
+<script>
+	$(document).ready(function(){
+		$('#bt1').click(function(){
+			$.ajax({
+	            async: false,
+	            url: '/dish/',
+	            type: 'POST', 
+	            data: {restaurant_id:$('#restaurant_id').val(),csrfmiddlewaretoken:'{{ csrf_token }}'},
+	            success: function (data) {
+	            		alert(data); 
+	            }
+        	})
+		});
+		$('#bt2').click(function(){
+			$.ajax({
+	            async: false,
+	            url: '/order/',
+	            type: 'POST', 
+	            data: {user_id:$('#user_id').val(),csrfmiddlewaretoken:'{{ csrf_token }}'},
+	            success: function (data) {
+	            		alert(data); 
+	            }
+        	})
+		});
+		$('#bt3').click(function(){
+			$.ajax({
+	            async: false,
+	            url: '/get_comments/',
+	            type: 'POST', 
+	            data: {dish_id:$('#dish_id').val(),csrfmiddlewaretoken:'{{ csrf_token }}'},
+	            success: function (data) {
+	            		alert(data); 
+	            }
+        	})
+		});
+		$('#bt4').click(function(){
+			$.ajax({
+	            async: false,
+	            url: '/search_dishes/',
+	            type: 'POST', 
+	            data: {words:$('#words').val(),csrfmiddlewaretoken:'{{ csrf_token }}'},
+	            success: function (data) {
+	            		alert(data); 
+	            }
+        	})
+		});
+	})
+</script>
+<body>
+	<table>
+		<tr><td>ajax的url</td><td>样例输入</td><td>返回数据格式</td></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr><td>/dish/</td><td>restaurant_id：<input type="text" id="restaurant_id" placeholder="527625"><button id="bt1">restaurant_id</button></td><td>[{'id': 459, 'name': '肉酱意粉', 'price': 25.0, 'photo_path': 'D:/YNCC/Img/DishImg/肉酱意粉.webp', 'description': '由牛肉、番茄等慢炖精致而 成的意式经典纯正肉酱汁，大颗肉粒，进口牛肉，进口意大利番茄酱，进口橄榄油'}, {'id': 460, 'name': '芝士奶香培根意粉', 'price': 28.0, 'photo_path': 'D:/YNCC/Img/DishImg/芝士奶香培根意粉.webp', 'description': '芝士奶香培根意粉'}]</td></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr><td>/order/</td><td>user_id：<input type="text" id="user_id" placeholder="3"><button id="bt2">user_id</button></td><td>[{'id': 2, 'dish_id': 459, 'restaurant_id': 527625, 'comment_id': 1, 'time': datetime.datetime(2018, 3, 11, 19, 17, 23)}]</td></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr><td>/get_comments/</td><td>dish_id：<input type="text" id="dish_id" placeholder="461"><button id="bt3">dish_id</button></td><td>[{'id': 3, 'user_id': 3, 'restaurant_id': 527625, 'oder_id': 2, 'time': datetime.datetime(2018, 3, 11, 19, 17, 23), 'comment': 'Comment of order form2'}]</td></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr><td>/search_dishes/</td><td>words：<input type="text" id="words" placeholder="牛肉"><button id="bt4">words</button></td><td>[{'id': 471, 'restaurant_id': 527625, 'name': '汉堡+薯条-双层芝士牛肉汉堡', 'price': 36.0, 'photo_path': 'D:/YNCC/Img/DishImg/汉堡+薯条-双层芝士牛肉汉堡.webp', 'description': '进口牛肉饼搭配每天新鲜挑选的蔬菜，加上無食自家烘焙的燕麦汉堡包，好吃～'}, {'id': 484, 'restaurant_id': 527625, 'name': '雪花牛肉沙拉', 'price': 35.0, 'photo_path': 'D:/YNCC/Img/DishImg/雪花牛肉沙拉.webp', 'description': '内有新鲜的蔬菜：土豆、 三角豆、胡萝卜、玉米，还有口感脆嫩的日本白菇，加上份量充足的鲜嫩牛肉，配上黑椒蔬菜汁，饱腹感非常强。'}]</td></tr>
+	</table>
+</body>
+</html>
