@@ -15,8 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from food_site.views import test
-from food_site.views import dish,order,get_comments,search_dishes
+from food_site.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -25,4 +24,7 @@ urlpatterns = [
     url(r'^get_comments/$', get_comments),
     url(r'^search_dishes/$', search_dishes),
     url(r'^test/$', test),
+    url(r'^wx/$', get),
+    url(r'^wx_login_comfirm/$', wx_login_comfirm),
+    url(r'^wx_login_redirect/$', wx_login_redirect),
 ]
