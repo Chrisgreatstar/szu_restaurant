@@ -1,0 +1,32 @@
+我新加了一个表wx_user用于微信登录，urls.py和views.py已经做相关处理
+
+下面是views.py说明：
+get函数：
+  直接放着就行。到时如果配置微信登录，需要先在微信公众平台通过验证，
+会要求填入自定义的token，并且要求你的后台能够将token正确加密并返回，
+get函数实现了内容为"py_access"的token的正确加密并返回（即此时平台验证
+填入的token为"py_access"）
+
+wx_login_redirect函数：
+  第一个redirect_uri格式为：域名加上"/wx_login_comfirm/",作用是将你的
+公众号appid作为参数之一访问微信官方，然后官方帮你跳转到你填入的另一个参数url，
+即redirect_uri，如果正确跳转，则会交由wx_login_comfirm函数处理
+
+wx_login_comfirm函数：
+  正确跳转时，官方会携带一个code来到本函数中，本函数拿到code，然后结合appid访问
+另一个官方网址，网址返回access_token,openid等用户个人重要数据，其中，openid是用户在该公众号
+下的唯一标识，我们要把它们存起来，或者判断用户是否已存在
+
+wx_user表的字段：
+  id主键	int(11)
+  access_token	varchar(300)	utf8_general_ci
+  expires_in	int(11)	
+  refresh_token	varchar(300)	utf8_general_ci
+  openid	varchar(300)	utf8_general_ci	
+
+你的完成部分：
+  编写models.py，实现以下功能：
+  1. 如果用户第一次登录，存入四个值到wx_user表中(除id外的其他，id是自增字段)；
+  2. 用户已登陆过，则刷新他的access_token，expires_in，refresh_token（也可以做其他操作）
+  注：该函数名称为wx_login，传入参数有四个，形式如下（注意expires_in是int类型）：
+  wx_login(JSON['access_token'],JSON['expires_in'],JSON['refresh_token'],JSON['openid'])
