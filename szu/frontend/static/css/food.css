@@ -1,0 +1,125 @@
+header{
+    width: 100%;
+    height: 800px;
+    background: url("../assets/food.jpg") 50% 50%;
+    background-size: cover;
+}
+.fixed-header{
+    position: fixed;
+    top: 0;
+}
+#closeBox{
+    width: 200px;
+    height: 200px;
+}
+#closeBox img{
+    width: 100px;
+    margin: 50px;
+}
+.detail{
+    width: 100%;
+    height: 290px;
+    border-bottom: 3px solid #f0f2f5;
+    z-index: 2;
+    background-color: white;
+    padding-top: 40px;
+    overflow: hidden;
+}
+.detail p:first-of-type{
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0 0 10px 5%;
+}
+.detail p:nth-of-type(2), .detail p:nth-of-type(3){
+    font-size: 36px;
+    float: left;
+}
+.detail p:nth-of-type(2){
+    margin: 10px 25px 0 5%;
+}
+.detail p:nth-of-type(3){
+    margin-top: 10px;
+}
+.detail p:nth-of-type(4){
+    margin: 130px 4.5% 0;
+    font-size: 54px;
+    color: #FF5339;
+}
+#cartBox{
+    width: 13%;
+    height: 130px;
+    float: right;
+    position: relative;
+    bottom: 103px;
+    right: 20px;
+}
+.detail img{
+    width: 70px;
+    position: relative;
+    top: 32px;
+    float: right;
+    right: calc(38.5% - 20px);
+}
+#feedback{
+    width: 90%;
+    height: auto;
+    margin: 0 5%;
+    z-index: 1;
+    overflow: hidden;
+}
+#feedback>div:first-of-type{
+    width: 100%;
+    height: 87px;
+    border-bottom: 3px solid #f0f2f5;
+}
+#feedback>div:first-of-type p:first-of-type{
+    font-size: 54px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin: 30px 0;
+}
+#feedback>div:first-of-type p:nth-of-type(2){
+    font-size: 60px;
+    color: #FF5339;
+    position: relative;
+    bottom: 85px;
+    left: 140px;
+}
+.fbItem{
+    width: 100%;
+    height: 300px;
+    border-bottom: 2px solid #f0f2f5;
+}
+.fbBasic{
+    width: calc(4% + 114px);
+    height: 100%;
+    float: left;
+}
+.fbItem img{
+    width: 114px;
+    float: left;
+    padding-top: 30px;
+}
+.fbGrade{
+    float: left;
+    font-size: 40px;
+    position: relative;
+    top: 16px;
+    left: 18px;
+}
+.fbContent{
+    width: calc(96% - 114px);
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.fbContent p:first-of-type{
+    padding-top: 33px;
+    font-size: 36px;
+    padding-bottom: 3px;
+}
+.fbContent p:nth-of-type(2){
+    line-height: 170%;
+    font-size: 40px;
+}

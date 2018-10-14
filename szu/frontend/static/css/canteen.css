@@ -1,0 +1,107 @@
+header{
+    width: 100%;
+    height: 450px;
+    background: #1296db;
+    overflow: hidden;
+}
+#back{
+    width: 15%;
+    height: 140px;
+    margin: 30px 0 30px 4%;
+}
+#back img{
+    width: 90px;
+    margin: 20px 0 0 14%;
+}
+.canteen-name{
+    position: relative;
+    top: 110px;
+    padding: 0 8%;
+    width: 84%;
+    height: 140px;
+    z-index: 2;
+}
+.fixed-name{
+    position: fixed;
+    top: 0;
+    background-color: #1296db;
+}
+.canteen-name p{
+    font-size: 66px;
+    font-weight: bold;
+    line-height: 100%;
+    color: white;
+    position: relative;
+    top: 36px;
+}
+#foods{
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    margin-bottom: 30px;
+}
+.food-item{
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+}
+.item-content{
+    width: 84%;
+    height: calc(100% - 3px);
+    margin: 0 8%;
+}
+.food-item:not(:last-of-type) .item-content{
+    border-bottom: 3px solid #f0f2f5;
+}
+.food-item a{
+    color: black;
+}
+.fd-pic{
+    width: 240px;
+    height: 240px;
+    border-radius: 16px;
+    background: url("../assets/food.jpeg") 50% 50%;
+    background-size: cover;
+    top: 50px;
+}
+.fd-intro{
+    width: calc(96% - 240px);
+    height: 100%;
+    left: 4%;
+    z-index: 1;
+}
+.fd-pic, .fd-intro{
+    position: relative;
+    float: left;
+}
+.fd-intro p:first-of-type{
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 54px;
+}
+.fd-intro p:nth-of-type(2), .fd-intro p:nth-of-type(3){
+    float: left;
+    font-size: 34px;
+    margin-right: 22px;
+    margin-top: 16px;
+}
+.fd-intro p:nth-of-type(4){
+    clear: left;
+    font-size: 46px;
+    color: #FF5339;
+    margin-top: 140px;
+}
+.cartBox{
+    float: right;
+    width: 12%;
+    height: 120px;
+    position: relative;
+    bottom: 150px;
+    right: calc(8% - 20px);
+    z-index: 2;
+}
+.cartBox img{
+    width: 80px;
+    float: right;
+    margin: 22px 11.5% 0 0;
+}

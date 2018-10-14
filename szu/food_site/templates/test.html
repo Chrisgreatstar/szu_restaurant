@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>szu_restaurant</title>
+<script type="text/javascript" src="../static/jquery.min.js"></script>
+</head>
+<script>
+	$(document).ready(function(){
+		$('#bt1').click(function(){
+			$.ajax({
+	            async: false,
+	            url: '/dish/',
+	            type: 'POST', 
+	            data: {restaurant_id:$('#restaurant_id').val(),csrfmiddlewaretoken:'{{ csrf_token }}'},
+	            success: function (data) {
+	            		for (var i = 0; i < data.length; i++) {
+	              			alert(data[i]["id"]+" "+data[i]["name"]+" "+data[i]["price"]+" "+data[i]["photo_path"]+" "+data[i]["description"]);
+	              		} 
+	            }
+        	})
+		});
+		$('#bt2').click(function(){
+			$.ajax({
+	            async: false,
+	            url: '/order/',
+	            type: 'POST', 
+	            data: {user_id:$('#user_id').val(),csrfmiddlewaretoken:'{{ csrf_token }}'},
+	            success: function (data) {
+	            		for (var i = 0; i < data.length; i++) {
+	              			alert(data[i]["id"]+" "+data[i]["dish_id"]+" "+data[i]["restaurant_id"]+" "+data[i]["comment_id"]+" "+data[i]["time"]);
+	              		}
+	            }
+        	})
+		});
+		$('#bt3').click(function(){
+			$.ajax({
+	            async: false,
+	            url: '/get_comments/',
+	            type: 'POST', 
+	            data: {dish_id:$('#dish_id').val(),csrfmiddlewaretoken:'{{ csrf_token }}'},
+	            success: function (data) {
+	            		for (var i = 0; i < data.length; i++) {
+	              			alert(data[i]["id"]+" "+data[i]["user_id"]+" "+data[i]["restaurant_id"]+" "+data[i]["oder_id"]+" "+data[i]["comment"]+" "+data[i]["time"]);
+	              		} 
+	            }
+        	})
+		});
+		$('#bt4').click(function(){
+			$.ajax({
+	            async: false,
+	            url: '/search_dishes/',
+	            type: 'POST', 
+	            data: {words:$('#words').val(),csrfmiddlewaretoken:'{{ csrf_token }}'},
+	            success: function (data) {
+	            		for (var i = 0; i < data.length; i++) {
+	              			alert(data[i]["id"]+" "+data[i]["restaurant_id"]+" "+data[i]["name"]+" "+data[i]["price"]);
+	              		} 
+	            }
+        	})
+		});
+		$('#bt5').click(function(){
+			$.ajax({
+	            async: false,
+	            url: '/write_comments/',
+	            type: 'POST', 
+	            data: {user_id:$('#user_id').val(),dish_id:$('#dish_id').val(),restaurant_id:$('#restaurant_id').val(),order_id:$('#order_id').val(),comment:$('#comment').val(),rank:$('#rank').val(),csrfmiddlewaretoken:'{{ csrf_token }}'},
+	            success: function (data) {
+	            		alert(data)
+	            }
+        	})
+		});
+		$('#bt6').click(function(){
+			$.ajax({
+	            async: false,
+	            url: '/restaurant_like/',
+	            type: 'POST', 
+	            data: {id:$('#id').val(),like:$('#like').val(),csrfmiddlewaretoken:'{{ csrf_token }}'},
+	            success: function (data) {
+	            		alert(data)
+	            }
+        	})
+		});
+		$('#bt7').click(function(){
+			$.ajax({
+	            async: false,
+	            url: '/write_restaurant_sugestion/',
+	            type: 'POST', 
+	            data: {restaurantID:$('#restaurantID').val(),userID:$('#userID').val(),sugestion:$('#sugestion').val(),csrfmiddlewaretoken:'{{ csrf_token }}'},
+	            success: function (data) {
+	            		alert(data)
+	            }
+        	})
+		});
+		$('#bt8').click(function(){
+			$.ajax({
+	            async: false,
+	            url: '/get_restaurant_sugestion/',
+	            type: 'POST', 
+	            data: {restaurant_ID:$('#restaurant_ID').val(),csrfmiddlewaretoken:'{{ csrf_token }}'},
+	            success: function (data) {
+	            		for (var i = 0; i < data.length; i++) {
+	              			alert(data[i]["user_id"]+" "+data[i]["sugestion"]);
+	              		} 
+	            }
+        	})
+		});
+		$('#bt9').click(function(){
+			$.ajax({
+	            async: false,
+	            url: '/restaurant_rank_list/',
+	            type: 'GET', 
+	            data: {},
+	            success: function (data) {
+	            		for (var i = 0; i < data.length; i++) {
+	              			alert(data[i]["name"]+" "+data[i]["rank"]);
+	              		} 
+	            }
+        	})
+		});
+		$('#bt10').click(function(){
+			$.ajax({
+	            async: false,
+	            url: '/dish_rank_list/',
+	            type: 'POST', 
+	            data: {res_id:$('#res_id').val(),csrfmiddlewaretoken:'{{ csrf_token }}'},
+	            success: function (data) {
+	            		for (var i = 0; i < data.length; i++) {
+	              			alert(data[i]["dish_id"]+" "+data[i]["sugestion"]);
+	              		} 
+	            }
+        	})
+		});
+	})
+</script>
+<body>
+	<table>
+		<tr><td>ajax的url</td><td>样例输入</td><td>返回数据格式</td></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr><td>/dish/</td><td>restaurant_id：<input type="text" id="restaurant_id" placeholder="527625"><button id="bt1">restaurant_id</button></td><td>[{'id': 459, 'name': '肉酱意粉', 'price': 25.0, 'photo_path': 'D:/YNCC/Img/DishImg/肉酱意粉.webp', 'description': '由牛肉、番茄等慢炖精致而 成的意式经典纯正肉酱汁，大颗肉粒，进口牛肉，进口意大利番茄酱，进口橄榄油'}, {'id': 460, 'name': '芝士奶香培根意粉', 'price': 28.0, 'photo_path': 'D:/YNCC/Img/DishImg/芝士奶香培根意粉.webp', 'description': '芝士奶香培根意粉'}]</td></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr><td>/order/</td><td>user_id：<input type="text" id="user_id" placeholder="3"><button id="bt2">user_id</button></td><td>[{'id': 2, 'dish_id': 459, 'restaurant_id': 527625, 'comment_id': 1, 'time': datetime.datetime(2018, 3, 11, 19, 17, 23)}]</td></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr><td>/get_comments/</td><td>dish_id：<input type="text" id="dish_id" placeholder="461"><button id="bt3">dish_id</button></td><td>[{'id': 3, 'user_id': 3, 'restaurant_id': 527625, 'oder_id': 2, 'time': datetime.datetime(2018, 3, 11, 19, 17, 23), 'comment': 'Comment of order form2'}]</td></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr><td>/search_dishes/</td><td>words：<input type="text" id="words" placeholder="牛肉"><button id="bt4">words</button></td><td>[{'id': 471, 'restaurant_id': 527625, 'name': '汉堡+薯条-双层芝士牛肉汉堡', 'price': 36.0, 'photo_path': 'D:/YNCC/Img/DishImg/汉堡+薯条-双层芝士牛肉汉堡.webp', 'description': '进口牛肉饼搭配每天新鲜挑选的蔬菜，加上無食自家烘焙的燕麦汉堡包，好吃～'}, {'id': 484, 'restaurant_id': 527625, 'name': '雪花牛肉沙拉', 'price': 35.0, 'photo_path': 'D:/YNCC/Img/DishImg/雪花牛肉沙拉.webp', 'description': '内有新鲜的蔬菜：土豆、 三角豆、胡萝卜、玉米，还有口感脆嫩的日本白菇，加上份量充足的鲜嫩牛肉，配上黑椒蔬菜汁，饱腹感非常强。'}]</td></tr>
+	</table>
+	<p>/write_comments/</p>
+	user_id:<input type="text" id="user_id">
+	dish_id:<input type="text" id="dish_id">
+	restaurant_id:<input type="text" id="restaurant_id">
+	order_id:<input type="text" id="order_id">
+	comment:<input type="text" id="comment">
+	rank:<input type="text" id="rank">
+	<button id="bt5">submit</button><br>
+	<p>/restaurant_like/</p>
+	id:<input type="text" id="id">
+	like:<input type="text" id="like">
+	<button id="bt6">submit</button><br>
+	<p>/write_restaurant_sugestion/</p>
+	restaurantID:<input type="text" id="restaurantID">
+	userID:<input type="text" id="userID">
+	sugestions:<input type="text" id="sugestion">
+	<button id="bt7">submit</button><br>
+	<p>/get_restaurant_sugestion/</p>
+	restaurant_ID:<input type="text" id="restaurant_ID">
+	<button id="bt8">submit</button>
+	<p>/restaurant_rank_list/</p>
+	<button id="bt9">submit</button>
+	<p>/disk_rank_list/</p>
+	restaurant_id:<input type="text" id="res_id">
+	<button id="bt10">submit</button>
+</body>
+</html>
