@@ -11,7 +11,7 @@ def getDishes(restaurant_id):
     for row in results:
         data = {}
         data['id'] = row[0]
-        #data['restaurant_id'] = row[1]
+        data['restaurant_id'] = row[1]
         data['name'] = row[2]
         data['price'] = row[3]
         data['photo'] = row[4]
