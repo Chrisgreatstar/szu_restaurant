@@ -30,12 +30,14 @@ def getOrderForms(user_id):
     datas = []
     for row in results:
         data = {}
-        data['id'] = row[0]
-        #data['user_id'] = row[1]
-        data['dish_id'] = row[2]
-        data['restaurant_id'] = row[3]
-        data['comment_id'] = row[4]
+        # data['id'] = row[0]
+        # data['user_id'] = row[1]
+        data['dish_id'] = row[0]
+        data['name'] = row[1]
+        data['restaurant_name'] = row[3]
+        data['price'] = row[4]
         data['time'] = row[5]
+        data['photo'] = row[5]
         datas.append(data)
     return datas
 
@@ -57,7 +59,7 @@ def getComments(dish_id):
         data['oder_id'] = row[4]
         data['time'] = row[5]
         data['comment'] = row[6]
-        # data['rank'] = row[7]
+        data['grade'] = row[7]
         datas.append(data)
     return datas
 
