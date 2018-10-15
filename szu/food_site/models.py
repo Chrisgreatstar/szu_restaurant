@@ -52,12 +52,12 @@ def getComments(dish_id):
         data = {}
         data['id'] = row[0]
         data['user_id'] = row[1]
-        # data['dish_id'] = row[2]
+        data['dish_id'] = row[2]
         data['restaurant_id'] = row[3]
         data['oder_id'] = row[4]
         data['time'] = row[5]
         data['comment'] = row[6]
-        data['rank'] =row[7]
+        # data['rank'] = row[7]
         datas.append(data)
     return datas
 
@@ -76,7 +76,7 @@ def searchDishes(words):
         data['restaurant_id'] = row[1]
         data['name'] = row[2]
         data['price'] = row[3]
-        data['photo_path'] = row[4]
+        data['photo'] = row[4]
         data['description'] = row[5]
         datas.append(data)
     return datas
