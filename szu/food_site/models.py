@@ -23,22 +23,28 @@ def getDishes(restaurant_id):
 def getOrderForms(user_id):
     connection=setting()
     cursor = connection.cursor()
-    cursor.execute(cursor.mogrify("Select * from order_form where user_id = %s order by id desc", user_id))
+    cursor.execute(cursor.mogrify("Select dish_id,comment_id,time from order_form where user_id = %s order by id desc", user_id))
     results = cursor.fetchall()
-    cursor.close()
-    connection.close()
     datas = []
     for row in results:
         data = {}
-        # data['id'] = row[0]
-        # data['user_id'] = row[1]
-        data['dish_id'] = row[0]
-        data['name'] = row[1]
-        data['restaurant_name'] = row[3]
-        data['price'] = row[4]
-        data['time'] = row[5]
-        data['photo'] = row[5]
+        dish_id = row[0]
+        data['dish_id'] = dish_id
+        data['comment_id'] = row[1]
+        data['date'] = row[2]
+
+        cursor.execute(cursor.mogrify("Select name,price,photo_path,restaurant_id from dish where id = %s", dish_id))
+        result = cursor.fetchone()
+        data['name'] = result[0]
+        data['price'] = result[1]
+        data['photo'] = result[2]
+        restaurant_id = result[3]
+        cursor.execute(cursor.mogrify("Select name from restaurant where id = %s", restaurant_id))
+        result = cursor.fetchone()
+        data['restaurant'] = result[0]
         datas.append(data)
+    cursor.close()
+    connection.close()
     return datas
 
 #返回菜式评论
