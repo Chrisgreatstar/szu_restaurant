@@ -2,9 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e56d1f23-5ad9-4761-badd-af4877635772" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/szu/food_site/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/szu/food_site/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/szu/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/szu/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/css/app.96d19ad745c7d41fa0da42fc0b9739ee.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/css/app.96d19ad745c7d41fa0da42fc0b9739ee.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/img/food.38ace2b.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/1.297c6fdce7f4719a5241.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/1.297c6fdce7f4719a5241.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/1.8cb60a1b529ca5145006.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/1.8cb60a1b529ca5145006.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/1.a068648e6c1b31c9f893.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/1.a068648e6c1b31c9f893.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/2.0cb9120c5affacbed619.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/2.0cb9120c5affacbed619.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/2.2510646b5bdb2bed391b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/2.2510646b5bdb2bed391b.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/2.3f43f947a8e390b44eb8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/2.3f43f947a8e390b44eb8.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/2.c87dd0336b17d327e463.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/2.c87dd0336b17d327e463.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/2.ca4125cd6b73df1cac8c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/2.ca4125cd6b73df1cac8c.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/4.9bc4cfd5ceddf32b375a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/4.9bc4cfd5ceddf32b375a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/5.39079387743692da20a6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/5.39079387743692da20a6.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/5.fc78f9d9b29f37b5422f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/5.fc78f9d9b29f37b5422f.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/6.00f6040545300e5ed13a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/6.00f6040545300e5ed13a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/6.24b9df4b86eaefff14dc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/6.24b9df4b86eaefff14dc.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/6.3a2e95be797c6fe04cab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/6.3a2e95be797c6fe04cab.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/6.f5e735ccb0fe8d87b4a9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/6.f5e735ccb0fe8d87b4a9.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/7.29e523890af65ef9891f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/7.29e523890af65ef9891f.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/7.8669a4810a194d7c3ec6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/7.8669a4810a194d7c3ec6.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/app.706a5a1023c0c7c09f0a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/app.706a5a1023c0c7c09f0a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/app.7163856b2e1a0d3d6f82.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/app.7163856b2e1a0d3d6f82.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/app.bb602ec727697a893ace.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/app.bb602ec727697a893ace.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/app.def2cb63ac56be4dd580.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/app.def2cb63ac56be4dd580.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/app.f9db31ab2bd121b8432e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/app.f9db31ab2bd121b8432e.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/manifest.0f31158985e5b6e1ce51.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/manifest.0f31158985e5b6e1ce51.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/manifest.3b6b0f3a77f0f8b8de4d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/manifest.3b6b0f3a77f0f8b8de4d.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/manifest.66916ba84d99cbbb9c98.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/manifest.66916ba84d99cbbb9c98.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/manifest.6f4b020811c506fa4b0a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/manifest.6f4b020811c506fa4b0a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/manifest.76bd1cf8305ef782d867.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/manifest.76bd1cf8305ef782d867.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/manifest.a61b89612654136a2dd1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/manifest.a61b89612654136a2dd1.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/manifest.a8649e9c92ff8b6455e7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/manifest.a8649e9c92ff8b6455e7.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/manifest.c5fb17403a5acf659553.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/manifest.c5fb17403a5acf659553.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/manifest.ffa4ae014a46b2bfc4c3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu/frontend/static/js/manifest.ffa4ae014a46b2bfc4c3.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szu_restaurant.sql" beforeDir="false" afterPath="$PROJECT_DIR$/szu_restaurant.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,19 +77,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/szu_restaurant$manage.coverage" NAME="manage Coverage Results" MODIFIED="1539628650534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/szu" />
+    <SUITE FILE_PATH="coverage/szu_restaurant$manage.coverage" NAME="manage Coverage Results" MODIFIED="1539660716836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/szu" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="246345233">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="1" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -55,7 +120,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/szu/food_site/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="275">
               <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -67,8 +132,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/szu/food_site/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+            <state relative-caret-position="165">
+              <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -132,8 +197,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2453" />
+    <option name="y" value="-9" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -250,7 +316,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="1" />
+    <frame x="1912" y="-7" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.3575332" />
@@ -258,7 +324,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32858709" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3275488" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -328,6 +394,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../../WeChat Files/DeanYe2013/Files/models(1).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/szu/food_site/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/szu/food_site/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -352,27 +435,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../WeChat Files/DeanYe2013/Files/models(1).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/szu/food_site/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/szu/food_site/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+        <state relative-caret-position="165">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
         </state>
       </provider>
     </entry>
